@@ -9,7 +9,7 @@ use routes::index::*;
         App::new()
         .route("/",web::get().to(index_page))
         .route("/ping",web::get().to(ping))
-       
+        
     });
    
     let port=8081;
