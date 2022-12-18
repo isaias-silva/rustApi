@@ -1,7 +1,6 @@
 use actix_web::*;
 mod routes;
 use routes::ping::*;
-use routes::info::*;
 use routes::index::*;
 #[actix_web::main]
 
@@ -10,7 +9,7 @@ use routes::index::*;
         App::new()
         .route("/",web::get().to(index_page))
         .route("/ping",web::get().to(ping))
-        .route("/info",web::get().to(info))
+       
     });
    
     let port=8081;
